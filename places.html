@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    body{
+    margin: 0;
+    padding: 0;
+    background-image:  linear-gradient(85deg,
+                    rgba(239, 27, 207, 0.799),
+                    rgba(8, 83, 156, 0.75)),url("data:image/jpeg;base64,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");
+    width:100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    a{
+    text-decoration: none;
+    color: white;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.title{
+    text-align:left;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white ;
+    font-size: 3.5rem;
+    margin-left: 20px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.titles{
+    color:white ;
+    font-size: 2.5rem;
+    font-family: 'Poppins';
+    margin-left: 140px;
+    position: absolute;
+    top: 42px;
+    left: 65px;
+}
+
+.nav{
+    color: white;
+    display: flex;   
+}
+
+.nav-div{
+    margin-top: 2rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+li{
+    list-style: none;
+}
+
+.list{
+    margin-left: 20px;
+}
+
+    h2{
+        text-align:center ;
+        color:white ;
+        font: 2em san-serif;
+        padding: 7px;
+    }
+    h4{
+        text-align:center ;
+        color:white ;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:larger;
+    }
+
+    .card{
+        height:100%;
+        width: 380px;
+        border: 2px solid white;
+        border-radius:10px;
+        color: white;
+        margin:10px;
+        padding:10px;
+    }
+
+    /* .card:hover{
+        border: 2px solid white;
+        border-radius:10px;
+    } */
+
+    .image{
+        width: 100% ;
+        height:230px ;
+        border-radius:10px;
+    }
+
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left:5rem;
+    }
+
+    button{
+        width: 100%;
+        padding: 10px 4px;
+        font-size: 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover{
+        transition-duration: 0.5;
+        background-color:  rgba(239, 27, 207, 0.799);
+        color: white;
+    }
+
+</style>
+
+
+<body>
+    <div class="head">
+        <h1 class="title">SUNDHARA</h1>
+        <div class="nav-div">
+            <ul class="nav">
+                <a href="index.html"><li class="list">HOME</li></a>
+                <a href="places.html"> <li class="list">PLACES</li> </a>
+                <a href="book.html"> <li class="list">BOOKINGS</li></a>
+                <a href="about.html"><li class="list">ABOUT</li></a>
+            </ul>
+        </div>
+    </div>
+    <h1 class="titles"> Travels </h1>
+    <h2 >TOP TOURIST PLACES IN INDIA</h2>
+    <h4>Must Go Places Before You Die</h4>
+    <div class="card-container">
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/leh/mmt/destination/m_leh-landscape_l_400_640.jpg"/>
+            <h1 class="place-name">Leh</h1>
+            <p>Prepare to be wooed by the mesmerizing mountains of Leh. You will love sightseeing and the surreal vistas of snow-capped mountains. Leh is also known for its unique wildlife.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/gokarna/mmt/destination/m_destination_gokarna_landscape_l_400_640.jpg"/>
+            <h1 class="place-name">Gokarna</h1>
+            <p>Take your beach love to Gokarna. You can expect extremely hot and humid weather. Also, don't miss the pilgrimage sites at Gokarna.Take your beach love to it. You can expect extremely hot and humid weather. </p>
+             <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/srinagar/mmt/destination/m_landscape_l_400_640.jpg"/>
+            <h1 class="place-name">srinagar</h1>
+            <p>A dreamy honeymoon awaits you at Srinagar. You will love sightseeing and the lively festivals. Don't forget to sample the delicious cuisines at Srinaga You will love sightseeing, the lively festivals.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/havelock/mmt/destination/m_destination_havelock_landscape_l_400_640.jpg"/>
+            <h1 class="place-name">Havelock Island</h1>
+            <p>Havelock is an absolute delight for romantic souls. You can expect extremely hot days with temperatures reaching up to 32°C. Don't forget to indulge in adventure activities at Havelock.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/pondicherry/mmt/destination/m_destination-pondicherry-landscape_l_400_640.jpg"/>
+            <h1 class="place-name">Pondicherry</h1>
+            <p>If you are a beach lover, you must head to Puducherry. If you are a beach lover, you must head to Puducherry. You can expect the city is at its hottest during this time. Puducherry is a hot favourite among foodies too.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/goa/mmt/destination/m_destination-goa-landscape_l_400_640.jpg"/>
+            <h1 class="place-name">Goa</h1>
+            <p>Rev up your spirits with the stunning adventures of Goa. You can expect heavy rainfall throughout the season, pleasant sea breeze. Humidity tends to be high. You can also sample delicious cuisines at Goa.</p>
+            <button>BOOK</button>    
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/varkala/mmt/destination/m_destination_Varkala_landscape_l_400_640.jpg"/>
+            <h1 class="place-name">Manali</h1>
+            <p>Manali is the perfect escape for romance- seekers. You will love the waterfalls and adventure sports. Additionally, you can try out various adventure activities at Manali.</p>
+            <button>BOOK</button>
+        </div>
+
+
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/alleppey/mmt/destination/m_destination-alleppey-landscape_l_400_640.jpg"/>
+            <h1 class="place-name">Alleppey</h1>
+            <p>Take your beach love to Alleppey. You can expect heavy rainfalls, along with humid weather. You can also unwind amidst the tranquil surroundings of Alleppey.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/varkala/mmt/destination/m_destination_Varkala_landscape_l_400_640.jpg"/>
+            <h1 class="place-name">Varkala</h1>
+            <p>Come and fall in love with the beach vibe of Varkala. You can expect heavy to moderate rainfalls. Varkala is also very popular among relaxation-seekers.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/amritsar/mmt/destination/m_destination_Amritsar_l_367_623.jpg"/>
+            <h1 class="place-name">amritsar</h1>
+            <p>Soak in the mystic hues of Amritsar, a famous pilgrimage spot! You will love exploring sightseeing attractions and attending various festivals. The local cuisines at Amritsar are worth trying out too.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/ooty/mmt/destination/m_Ooty_activity_mountains_l_368_613.jpg"/>
+            <h1 class="place-name">ooty</h1>
+            <p>Officially called Ootacamund, the hill-town is better known by its nicknameOoty. It is loved by Bollywood directors, honeymooners, families, and even backpackers, for its mountains, lakes, gardens, and waterfalls.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/coorg/mmt/destination/m_destination-coorg-landscape_l_400_640.jpg"/>
+            <h1 class="place-name">Coorg</h1>
+            <p>Unwind in the lap of nature in Coorg where aromatic coffee and spice plantations, lush green hills, cascading waterfalls and a distinct old- world charm sooth the senses in coorg.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/ujjain/mmt/destination/m_Ujjain_l_638_956.jpg"/>
+            <h1 class="place-name">ujjain</h1>
+            <p>One of the seven sacred Hindu cities, Ujjain is located on the banks of river Kshipra and is land of the magnificent Kumbh Mela. Iconic religious sites and a web of lively lanes are a vibrant display of Ujjains art and heritage.</p>
+            <button>BOOK</button>
+        </div>
+
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/mount%20abu/mmt/destination/m_mount-abu-landscape_l_329_527.jpg"/>
+            <h1 class="place-name">Mount Abu</h1>
+            <p>The only hill station in Rajasthan and the former summer capital of Rajputana rulers, Mount Abu affords a stunning landscape complemented by great weather at an altitude of 1220 metres.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/chikmangalur/mmt/destination/m_destination-chikmagalur-landscape_l_400_640.jpg"/>
+            <h1 class="place-name">chikmangalur</h1>
+            <p>A hill station at the foothills of the Mullayanagiri peak in the Western Ghats in Karnataka, Chikmagalur entices with trekking trails, coffee plantations, rivers, waterfalls, temples and wildlife.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/rameshwaram/mmt/destination/m_destination_rameshwaram_landscape_l_400_640.jpg"/>
+            <h1 class="place-name">Rameshwaram</h1>
+            <p>Made famous by the epic Ramayana, Rameshwaram is a quaint beach town and a popular Hindu pilgrimage destination that also attracts nature lovers and adventure enthusiasts.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/aulidestimage/mmt/activities/m_Auli_MarNew_2_l_800_1200.png"/>
+            <h1 class="place-name">Auli</h1>
+            <p>Dotted with snowy peaks and oak-fringed slopes, Auli is a charming hill station nestled in the Chamoli district of Uttarakhand. A haven for ski lovers, it offers jaw-dropping vistas of Nanda Devi, Kamet and Dunagiri peaks.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/new_dest_imagemar/mmt/activities/m_mahabaleshwar_3_l_648_1194.jpg"/>
+            <h1 class="place-name">Mahabaleshwar</h1>
+            <p>Mahabaleshwar is the ideal hill station getaway from Mumbai with its mesmerising waterfalls, old forts, historic temples and long stretches of vibrant strawberry plantations.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/pondicherry/mmt/destination/m_Pondicherry_activity_beach_l_382_691.jpg"/>
+            <h1 class="place-name">Pondicherry</h1>
+            <p>A fascinating, small town with enough elements to charm its visitors, Pondicherry whose official name was changed to Puducherry in 2006, was once the largest French colony in India.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hblimg.mmtcdn.com/content/hubble/img/lakshadweep/mmt/destination/m_Lakshadweep_l_580_870.jpg"/>
+            <h1 class="place-name">Lakshadweep</h1>
+            <p>Lakshadweep is home to serene beaches. You can expect summer heat and the temperature rising upto 32°C. Lakshadweep is also very popular among relaxation-seekers.</p>
+            <button>BOOK</button>
+        </div>
+        <div class="card">
+            <img class="image" src="https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1355/kodaikanal-city.jpg?crop=259:168&downsize=259:168"/>
+            <h1 class="place-name">Kodaikonal</h1>
+            <p>Kodaikanal, a serene hill station in Tamil Nadu, India, is known for its beautiful lakes, lush forests, and pleasant climate, making it a popular tourist destination.You can also enjoy boating on the serene lake.</p>
+            <button>BOOK</button>
+        </div>
+    </div>
+</body>
+</html>
